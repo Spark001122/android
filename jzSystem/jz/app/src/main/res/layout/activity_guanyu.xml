@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back_ccloth"
+            android:layout_width="47dp"
+            android:layout_height="81dp"
+            android:background="#0000"
+            android:text="⬅"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#0000"
+            android:gravity="bottom|center"
+            android:paddingBottom="15dp"
+            android:text="关于"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/yingyongxinxi_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:text="应用信息"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/banben__text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yingyongxinxi_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="版本"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/banben_id_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banben__text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="CV001.0"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/guanyuyingyong__text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banben_id_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="关于应用"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/yingyongneirong_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guanyuyingyong__text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="学习这个项目，用于理解Activity，Fragment，数据库等相关内容。
+         好好学习，天天向上。"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/kaifazhe__text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yingyongneirong_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="开发者"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/kaifazuyuan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kaifazhe__text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="计科GT2302班，张鹏，陈欣欣，吴军宜，李雪研，胡溢"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/banquan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kaifazuyuan_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="开发时间"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/kaifashijian_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banquan_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="2024年5月24日"
+        android:textSize="12dp" />
+
+    <ImageButton
+        android:id="@+id/bf"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/kaifashijian_text"
+        android:layout_marginLeft="10dp"
+        android:adjustViewBounds="true"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ysq" />
+
+</RelativeLayout>

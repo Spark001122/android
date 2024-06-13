@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_horizontal"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/id"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/leixng_list_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:text="类型"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/yongtu_list_typ1e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/leixng_list_type"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:text="用途"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="7dp"
+            android:text="¥"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/qian_list_jj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/q"
+            android:text="数"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shijian_list_typ1e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qian_list_jj"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/yongtu_list_typ1e"
+            android:text="时间"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+
+</LinearLayout>

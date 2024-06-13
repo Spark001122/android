@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back_ccloth01"
+            android:layout_width="47dp"
+            android:layout_height="81dp"
+            android:background="#99ccff"
+            android:text="⬅"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#99ccff"
+            android:gravity="bottom|center"
+            android:paddingBottom="15dp"
+            android:text="理财资讯"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="100dp">
+
+
+    </com.youth.banner.Banner>
+
+    <TextView
+        android:id="@+id/yingyongxinxi_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="　A股市场：盈利预期的再修正与政策的共振。预计下一阶段市场上行的动力将逐步从宏观经济转向微观层面的上市公司盈利预期的再修正。一季报之后，分析师对A股的盈利预期有望迎来超季节性的上修，这或将成为未来一段时间市场上行的重要动力。在市场行情演绎的节奏方面，政策出台前后可能会是市场迎来上涨的关键时间点，尤其是地产链相关政策进一步优化，或将推动市场迎来新一轮上行区间。总体来看，市场行情有望修复至去年的乐观水平。预计市场风格将偏均衡，建议关注家用电器、电子、银行、基础化工、有色金属及房地产行业。港股市场：仍有贝塔机会。
+当前，海外投资者对港股市场并不悲观，预计港股市场仍有贝塔机会。从旨在追踪富时中国A50指数的香港ETF基金来看，无论是南方富时中国A50ETF还是iShares安硕富时A50中国ETF均在5月维持净流入。此外，市场对港股的盈利预期有望迎来上修，或将支持港股维持强势表现。"
+        android:textSize="14dp" />
+
+
+
+
+
+
+</RelativeLayout>

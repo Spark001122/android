@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back_ccloth"
+            android:layout_width="47dp"
+            android:layout_height="81dp"
+            android:background="#ff3366"
+            android:text="⬅"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#ff3366"
+            android:gravity="bottom|center"
+            android:paddingBottom="15dp"
+            android:text="添加数据"
+            android:textColor="#FFFFFB"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/id_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="      id        ： "
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/id_edittext"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_toRightOf="@+id/jinexinxi_text"
+        android:background="@null"
+        android:hint="请输入id" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/id_text"
+        android:layout_marginTop="20dp"
+        android:background="#303F9F"/>
+
+    <TextView
+        android:id="@+id/jinexinxi_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="金额信息 ： "
+        android:layout_below="@+id/id_text"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/jinexinxi_edittext"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/jinexinxi_text"
+        android:background="@null"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/id_edittext"
+        android:hint="请输入金额" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/jinexinxi_text"
+        android:layout_marginTop="20dp"
+        android:background="#303F9F"/>
+
+
+    <TextView
+        android:id="@+id/jleixing_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jinexinxi_text"
+        android:layout_marginTop="30dp"
+        android:text="记账类型 ："
+        android:textSize="25dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/jleixing_text"
+        android:layout_below="@+id/jinexinxi_edittext"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_sr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收入"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/radio_zc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="支出"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/jleixing_text"
+        android:layout_marginTop="20dp"
+        android:background="#303F9F"/>
+
+    <TextView
+        android:id="@+id/xiaofeiyongtu_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jleixing_text"
+        android:layout_marginTop="40dp"
+        android:text="消费用途 ："
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/xiaofeiyongtu_edittext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@+id/xiaofeiyongtu_text"
+        android:background="@null"
+        android:hint="请输入消费用途" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/xiaofeiyongtu_text"
+        android:layout_marginTop="20dp"
+        android:background="#303F9F"/>
+
+    <TextView
+        android:id="@+id/riqi_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xiaofeiyongtu_text"
+        android:layout_marginTop="40dp"
+        android:text="日期： "
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/riqi_edittext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xiaofeiyongtu_edittext"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/riqi_text"
+        android:background="@null" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/riqi_text"
+        android:layout_marginTop="20dp"
+        android:background="#303F9F"/>
+
+    <TextView
+        android:id="@+id/beizhushuoming_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/riqi_edittext"
+        android:layout_marginTop="40dp"
+        android:text="备注说明："
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/beizhushuoming_edittext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/riqi_edittext"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@+id/beizhushuoming_text"
+        android:background="@null"
+        android:hint="请输入备注" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/beizhushuoming_text"
+        android:layout_marginTop="20dp"
+        android:background="#303F9F"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/beizhushuoming_text"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tianjia_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beizhushuoming_text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_weight="1"
+            android:background="#ff3366"
+            android:text="添加"
+            android:textColor="#FFFFFB"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

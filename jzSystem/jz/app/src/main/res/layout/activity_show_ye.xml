@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ShowYeActivity">
+
+    <RelativeLayout
+
+        android:id="@+id/main_month_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/main_month_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="本月支出情况:"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <RelativeLayout
+            android:id="@+id/main_month_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/main_month_out"
+            android:paddingRight="30dp">
+
+            <TextView
+                android:id="@+id/main_tv_month_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总收入"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/srtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_tv_month_in"
+                android:text="￥"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/main_tv_month_in_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_tv_month_in"
+                android:layout_toRightOf="@+id/srtext"
+                android:text="0.00"
+                android:textSize="20dp"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_month_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="30dp">
+
+            <TextView
+                android:id="@+id/main_tv_month_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总支出"
+                android:textSize="20dp"></TextView>
+            <TextView
+                android:id="@+id/zctext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_tv_month_out"
+                android:text="￥"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/main_tv_month_out_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_tv_month_out"
+                android:layout_toRightOf="@+id/zctext"
+                android:text="0.00"
+                android:textSize="20dp"></TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/main_lv"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/main_month_total"></ListView>
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_lv"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:background="#ff9933"
+        android:text="添加一笔" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <ImageButton
+            android:id="@+id/sy_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sy"
+            android:background="@color/white"
+            />
+
+        <ImageButton
+            android:id="@+id/my_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/my"
+            android:text="我的"
+            android:background="@color/white"
+            android:layout_marginLeft="150dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
